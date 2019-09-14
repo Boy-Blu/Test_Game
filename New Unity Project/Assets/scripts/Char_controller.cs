@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Char_controller : MonoBehaviour
 {
-	public float speed = 10.0f;
+  public float speed = 10.0F;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +15,15 @@ public class Char_controller : MonoBehaviour
     void Update()
     {
 
-    	float translation = Input.GetAxis("Vertical") * speed;
-    	float strafe = Input.GetAxis("Horizontal") * speed;
-    	translation *= Time.deltaTime;
-    	strafe *= Time.deltaTime;
+      float translation = Input.GetAxis("Vertical") * speed;
+      float strafe = Input.GetAxis("Horizontal") * speed;
+      translation *= Time.deltaTime;
+      strafe *= Time.deltaTime;
 
-    	transform.Translate(strafe,0, translation);
-    	if (Input.GetKeyDown("escape")){
-    		Cursor.lockState=CursorLockMode.None;
-    	}
+      transform.Translate(strafe,0, translation);
+      if (Input.GetKeyDown("escape")){
+        Cursor.lockState=CursorLockMode.None;
+      }
         
     }
 }
