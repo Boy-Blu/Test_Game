@@ -278,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 5
   smoothing: 2
-  invertCamera: -1
+  invertCamera: 1
 --- !u!1 &945901636
 GameObject:
   m_ObjectHideFlags: 0
